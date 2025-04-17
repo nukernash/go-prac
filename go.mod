@@ -1,3 +1,3 @@
-module coding-prac-go
+module go-prac
 
 go 1.24.0
