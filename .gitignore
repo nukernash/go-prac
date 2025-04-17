@@ -1,0 +1,25 @@
+# Test binary, build output
+*.test
+*.out
+
+# Output of `go build`
+/bin/
+/build/
+/dist/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Logs
+*.log
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore binaries and compiled packages
+/bin/
+/pkg/
