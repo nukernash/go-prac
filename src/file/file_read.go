@@ -1,9 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
 )
 
 func main() {
@@ -19,7 +19,6 @@ func main() {
 
 	fmt.Println(string(data))
 
-
 	// Open a file and read line-by-line print
 	file, err := os.Open(testFile)
 	if err != nil {
@@ -31,8 +30,8 @@ func main() {
 
 	scanner := bufio.NewScanner(file)
 	i := 0
-	for(scanner.Scan()) {
-		fmt.println(Strings.  "Line %d : %s", i , scanner.Text())
-		i++;
+	for scanner.Scan() {
+		fmt.Printf("Line %d : %s\n", i, scanner.Text())
+		i++
 	}
 }
