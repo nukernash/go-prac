@@ -8,6 +8,33 @@ import (
 
 func main() {
 
+	implUsingSlice()
+
+	implUsingContainerList()
+}
+
+func implUsingSlice() {
+
+	//STack
+	stack := make([]int, 0)
+
+	//Push
+	stack = append(stack, 1)
+	stack = append(stack, 2)
+	stack = append(stack, 3)
+
+	//peek
+	front := stack[len(stack)-1]
+	fmt.Println(front)
+
+	// pop
+	stack = stack[:len(stack)-1]
+	next := stack[len(stack)-1]
+	fmt.Println(next)
+
+}
+
+func implUsingContainerList() {
 	//Stack
 	stack := list.New()
 	stack.PushFront(1)
@@ -22,5 +49,4 @@ func main() {
 	//peek
 	front = stack.Front()
 	fmt.Println(front.Value)
-
 }
